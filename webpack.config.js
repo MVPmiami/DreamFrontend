@@ -16,6 +16,9 @@ module.exports = {
     open: true,
     port: 9000,
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   plugins: [
     new HTMLWebpackPligin({template: './src/index.html'}),
     new CleanWebpackPlugin()
