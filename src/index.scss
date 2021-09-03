@@ -1,0 +1,74 @@
+$light-blue: #46c7e9;
+$dark-blue: #26445a;
+$black: #2c2b3c;
+$yellow: #e4e642;
+$white: #f6f5f8;
+$font-text: "Roboto Slab", serif;
+$gradient: linear-gradient(
+  180deg,
+  rgba(225, 237, 247, 1) 19%,
+  rgba(230, 230, 230, 1) 90%
+);
+
+body,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  background: $gradient;
+  background-repeat: no-repeat;
+  scrollbar-color: #445d72 #445d728a;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #445d728a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #445d72;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+  .logo {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-wrapper {
+    height: 100px;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    min-width: 100%;
+    justify-content: center;
+  }
+  .right-side {
+    height: 50px;
+  }
+}

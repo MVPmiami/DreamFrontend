@@ -1,4 +1,6 @@
-.test-style{
-  color: rgb(58, 228, 15);
-  font-size: 32px;
+$gradientDark: linear-gradient(180deg, rgba(38,68,90,1) 12%, rgba(43,87,112,1) 33%, rgba(47,106,132,1) 51%, rgba(49,115,142,1) 66%, rgba(51,120,147,1) 76%, rgba(51,121,148,1) 84%, rgba(53,129,157,1) 92%, rgba(55,137,166,1) 98%);
+$gradientLight: linear-gradient(180deg, rgba(246,245,248,1) 16%, rgba(246,245,248,1) 30%, rgba(238,243,247,1) 40%, rgba(238,243,247,1) 56%, rgba(224,239,246,1) 77%);
+$dark-blue: #26445a;
+.wrapper{
+  
 }

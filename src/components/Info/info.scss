@@ -1,0 +1,104 @@
+$light-blue: #46c7e9;
+$dark-blue: #26445a;
+$black: #2c2b3c;
+$yellow: #e4e642;
+$white: #f6f5f8;
+$font-text: "Roboto Slab", serif;
+
+.info-cards {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-examples {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+.card {
+  width: 36%;
+  height: 90%;
+  margin: 40px;
+  box-shadow: 0 0 30px #445d72c7;
+  transition: 0.8s;
+  border-radius: 25px;
+  position: relative;
+  cursor: default;
+  user-select: none;
+  &:hover {
+    transition: 0.8s;
+    background-color: #445d72;
+    box-shadow: 0 0 30px #445d72;
+  }
+}
+
+.info-cards-skills {
+  background-color: #445d728a;
+  &-header {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: $font-text;
+    padding-left: 35px;
+  }
+  & li {
+    color: #ffffff;
+    font-family: $font-text;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+}
+
+.info-cards-offers {
+  background-color: #445d728a;
+  &-header {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: $font-text;
+    padding-left: 35px;
+    padding-bottom: 28px;
+  }
+  & li {
+    color: #ffffff;
+    font-family: $font-text;
+    font-size: 22px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .info-cards-skills {
+    &-header {
+      font-size: 24px;
+    }
+    & li {
+      font-size: 20px;
+    }
+  }
+
+  .info-cards-offers {
+    &-header {
+      font-size: 24px;
+    }
+    & li {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .info-cards {
+    flex-direction: column;
+    height: 960px;
+  }
+
+  .card {
+    width: 310px;
+    background-color: #445d72;
+  }
+}
