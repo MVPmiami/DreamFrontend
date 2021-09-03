@@ -5,6 +5,7 @@ import {setNewTheme} from './../reducers/changeThemeReducer';
 import Header from './Header/header'
 import HelloSection from './HelloSection/helloSection';
 import Info from './Info/info';
+import Footer from './Footer/footer';
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Header/>
       <HelloSection/>
       <Info/>
+      <Footer/>
     </div>
   )
 }
