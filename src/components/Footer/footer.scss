@@ -59,3 +59,39 @@ footer {
 .footer-services ul {
   list-style: none;
 }
+
+@media (max-width: 992px) {
+  .footer-contacts {
+    font-size: 14px;
+    left: 10%;
+  }
+
+  .footer-services {
+    right: 10%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-wrapper {
+    height: 440px;
+  }
+
+  .footer-contacts {
+    position: relative;
+    left: 0;
+    margin-top: 20px;
+  }
+
+  .footer-services {
+    position: relative;
+    right: 0;
+    margin-top: 20px;
+  }
+}
