@@ -6,12 +6,21 @@ import "swiper/css/scrollbar"
 import SwiperCore, {
   Scrollbar
 } from 'swiper';
+import Anime from 'react-animejs-wrapper'
 SwiperCore.use([Scrollbar]);
 
 
 const Slider = () => {
 
   return (
+    <Anime 
+    config={{
+      translateY: [2500, 0],
+      scale: [0, 1],
+      loop: 1,
+      delay: 2000,
+      duration: 3000,
+    }}>
       <Swiper
       spaceBetween={50}
       slidesPerView={1}
@@ -34,6 +43,7 @@ const Slider = () => {
         </div></SwiperSlide>
       ...
     </Swiper>
+    </Anime>
   )
 }
 
