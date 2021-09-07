@@ -68,6 +68,10 @@ $font-text: "Roboto Slab", serif;
       margin: 10px;
     }
   }
+
+  .wrapper-contacts {
+    height: 130vh;
+  }
 }
 
 @media (max-width: 767px) {
@@ -79,9 +83,16 @@ $font-text: "Roboto Slab", serif;
       margin: 10px;
     }
   }
+  .wrapper-contacts {
+    height: 130vh;
+  }
 }
 
 @media (max-width: 500px) {
+  .wrapper-contacts {
+    height: 130vh;
+  }
+
   .box-contacts {
     font-size: 14px;
     flex-direction: column;
