@@ -29,11 +29,11 @@ const Slider = () => {
       }}
       scrollbar={{ draggable: true }}
     >
-      <SwiperSlide><div className="company">
-        <a className="example-link" href="https://mvpmiami.github.io/TestTask/dist/">Посмотреть</a>
-        </div></SwiperSlide>
       <SwiperSlide><div className="apple">
       <a className="example-link" href="https://mvpmiami.github.io/apple/">Посмотреть</a>
+        </div></SwiperSlide>
+      <SwiperSlide><div className="company">
+        <a className="example-link" href="https://mvpmiami.github.io/TestTask/dist/">Посмотреть</a>
         </div></SwiperSlide>
       <SwiperSlide><div className="onliner">
       <a className="example-link" href="https://mvpmiami.github.io/Onliner/">Посмотреть</a>

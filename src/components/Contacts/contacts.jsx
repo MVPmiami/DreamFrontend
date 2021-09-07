@@ -3,9 +3,10 @@ import './contacts.scss';
 
 const Contacts = () => {
   return (
-    <div className="wrapper">
+    <div className="wrapper-contacts">
       <div className="container">
-            <div className="contacts">
+          <div className="contacts-and-services">
+            <div className="contacts-contacts box-contacts">
               <h2>Контакты</h2>
               <ul>
                 <li>Телефон: +375 (25) 701-07-92</li>
@@ -14,7 +15,7 @@ const Contacts = () => {
                 <li>Инстаграм: asenk.frontend</li>
               </ul>
             </div>
-            <div className="services">
+            <div className="services-services box-contacts">
               <h2>Услуги</h2>
               <ul>
                 <li>Верстка одностраничного сайта</li>
@@ -25,6 +26,7 @@ const Contacts = () => {
                 <li>Поддержка сайта после выполнения</li>
               </ul>
             </div>
+          </div>
         </div>
     </div>
   )

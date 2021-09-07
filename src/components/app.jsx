@@ -6,7 +6,6 @@ import Header from './Header/header'
 import Footer from './Footer/footer';
 import AboutMe from './AboutMe/aboutMe';
 import Contacts from './Contacts/contacts';
-import Home from './Home/home';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 
@@ -22,6 +21,9 @@ const App = () => {
           </Route>
           <Route path='/contacts'>
             <Contacts/>
+          </Route>
+          <Route path="/">
+            <AboutMe/>
           </Route>
         </Switch>
         <Footer/>
