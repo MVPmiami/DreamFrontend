@@ -6,10 +6,10 @@ const HelloSection = () => {
   return (
     <Anime 
       config={{
-      translateY: [-2000, 0],
+      translateY: [-500, 0],
       scale: [0, 1],
       loop: 1,
-      duration: 3000,
+      duration: 4000,
     }}>
     <div className="hello-section-wrapper">
       <div className="container">

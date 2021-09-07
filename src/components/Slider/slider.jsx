@@ -15,11 +15,11 @@ const Slider = () => {
   return (
     <Anime 
     config={{
-      translateY: [2500, 0],
+      translateY: [1000, 0],
       scale: [0, 1],
       loop: 1,
-      delay: 2000,
-      duration: 3000,
+      delay: 3000,
+      duration: 4500,
     }}>
       <Swiper
       spaceBetween={50}
