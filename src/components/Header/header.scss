@@ -40,6 +40,23 @@ header {
   user-select: none;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: #445d72;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  &:hover {
+    background-color: #445d72;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+}
+
 .about-me {
   height: 80%;
   width: 50%;
@@ -47,11 +64,6 @@ header {
   padding: 0 10px;
   justify-content: center;
   align-items: center;
-  &:hover {
-    background-color: #445d72;
-    color: #ffffff;
-    border-radius: 10px;
-  }
 }
 
 .contacts {
@@ -61,11 +73,6 @@ header {
   padding: 0 10px;
   align-items: center;
   justify-content: center;
-  &:hover {
-    background-color: #445d72;
-    color: #ffffff;
-    border-radius: 10px;
-  }
 }
 
 .active {

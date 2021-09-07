@@ -3,19 +3,30 @@ import './app.scss';
 import { useDispatch, useSelector } from "react-redux";
 import {setNewTheme} from './../reducers/changeThemeReducer';
 import Header from './Header/header'
-import HelloSection from './HelloSection/helloSection';
-import Info from './Info/info';
 import Footer from './Footer/footer';
+import AboutMe from './AboutMe/aboutMe';
+import Contacts from './Contacts/contacts';
+import Home from './Home/home';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 
 
 const App = () => {
   return (
-    <div className="wrapper">
-      <Header/>
-      <HelloSection/>
-      <Info/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <div className="wrapper">
+        <Header/>
+        <Switch>
+          <Route path='/about'>
+            <AboutMe/>
+          </Route>
+          <Route path='/contacts'>
+            <Contacts/>
+          </Route>
+        </Switch>
+        <Footer/>
+      </div>
+    </BrowserRouter>
   )
 }
 
